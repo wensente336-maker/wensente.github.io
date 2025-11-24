@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>东莞出发深圳周末两日游详细方案</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FF8C00', // 橙色主题
+                        secondary: '#4A5568',
+                        accent: '#ED8936',
+                        light: '#F7FAFC',
+                        dark: '#2D3748'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif']
+                    },
+                    boxShadow: {
+                        'card': '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
+                        'card-hover': '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)'
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-shadow {
+                text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+            }
+            .bg-gradient-orange {
+                background: linear-gradient(135deg, #FF8C00 0%, #FF6B00 100%);
+            }
+            .transition-all-300 {
+                transition: all 0.3s ease;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- 顶部导航 -->
+    <header class="bg-gradient-orange text-white shadow-md">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h1 class="text-3xl font-bold text-shadow">东莞出发深圳周末两日游</h1>
+                    <p class="text-lg opacity-90">2025年11月22-23日</p>
+                </div>
+                <div class="flex space-x-4">
+                    <button id="btn-print" class="bg-white text-primary px-4 py-2 rounded-lg shadow hover:bg-gray-100 transition-all-300 flex items-center">
+                        <i class="fa fa-print mr-2"></i> 打印方案
+                    </button>
+                    <button id="btn-share" class="bg-white text-primary px-4 py-2 rounded-lg shadow hover:bg-gray-100 transition-all-300 flex items-center">
+                        <i class="fa fa-share-alt mr-2"></i> 分享
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主要内容 -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- 天气提示 -->
+        <section class="bg-white rounded-xl shadow-card p-6 mb-8 border-l-4 border-primary">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <div class="bg-primary rounded-full p-4 mr-4">
+                        <i class="fa fa-sun-o text-white text-2xl"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-xl font-bold text-gray-800">深圳天气提示</h2>
+                        <p class="text-gray-600">11月22-23日</p>
+                    </div>
+                </div>
+                <div class="flex space-x-6">
+                    <div class="text-center">
+                        <p class="text-gray-500">周六 (22日)</p>
+                        <p class="text-2xl font-bold text-gray-800">16~24℃</p>
+                        <p class="text-gray-600">多云转晴</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-gray-500">周日 (23日)</p>
+                        <p class="text-2xl font-bold text-gray-800">16~26℃</p>
+                        <p class="text-gray-600">晴</p>
+                    </div>
+                </div>
+                <div class="mt-4 md:mt-0 w-full md:w-auto">
+                    <div class="bg-orange-50 border border-orange-200 rounded-lg p-3">
+                        <p class="text-orange-800 text-sm"><i class="fa fa-info-circle mr-1"></i> 天气晴朗，适合户外活动。早晚温差较大，建议携带薄外套。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 行程概览 -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                <i class="fa fa-calendar-check-o text-primary mr-2"></i> 行程概览
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- 第一天 -->
+                <div class="bg-white rounded-xl shadow-card hover:shadow-card-hover transition-all-300 overflow-hidden">
+                    <div class="bg-primary text-white p-4">
+                        <h3 class="text-xl font-bold">第一天 (11月22日)</h3>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-4">
+                            <li class="flex">
+                                <span class="bg-primary text-white text-sm font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3 flex-shrink-0">1</span>
+                                <div>
+                                    <p class="font-bold text-gray-800">11:00-13:30 参观般若禅寺</p>
+                                    <p class="text-gray-600 text-sm">体验禅意文化，品尝免费素斋</p>
+                                </div>
+                            </li>
+                            <li class="flex">
+                                <span class="bg-primary text-white text-sm font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3 flex-shrink-0">2</span>
+                                <div>
+                                    <p class="font-bold text-gray-800">14:00-16:00 全球首家人工智能6S店</p>
+                                    <p class="text-gray-600 text-sm">体验前沿科技与人工智能产品</p>
+                                </div>
+                            </li>
+                            <li class="flex">
+                                <span class="bg-primary text-white text-sm font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3 flex-shrink-0">3</span>
+                                <div>
+                                    <p class="font-bold text-gray-800">18:00-21:00 夜游世界之窗</p>
+                                    <p class="text-gray-600 text-sm">欣赏灯光秀与无人机表演</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- 第二天 -->
+                <div class="bg-white rounded-xl shadow-card hover:shadow-card-hover transition-all-300 overflow-hidden">
+                    <div class="bg-primary text-white p-4">
+                        <h3 class="text-xl font-bold">第二天 (11月23日)</h3>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-4">
+                            <li class="flex">
+                                <span class="bg-primary text-white text-sm font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3 flex-shrink-0">1</span>
+                                <div>
+                                    <p class="font-bold text-gray-800">9:00-12:00 参观深圳大学</p>
+                                    <p class="text-gray-600 text-sm">游览"中国最美校园之一"</p>
+                                </div>
+                            </li>
+                            <li class="flex">
+                                <span class="bg-primary text-white text-sm font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3 flex-shrink-0">2</span>
+                                <div>
+                                    <p class="font-bold text-gray-800">13:00 返程东莞</p>
+                                    <p class="text-gray-600 text-sm">结合实时交通状况，建议12:30前出发</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 详细行程 -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                <i class="fa fa-map-signs text-primary mr-2"></i> 详细行程
+            </h2>
+            
+            <!-- 第一天详细行程 -->
+            <div class="bg-white rounded-xl shadow-card p-6 mb-6">
+                <h3 class="text-xl font-bold text-primary mb-4">第一天 (11月22日)</h3>
+                
+                <!-- 般若禅寺 -->
+                <div class="mb-6 pb-6 border-b border-gray-200">
+                    <div class="flex flex-col md:flex-row">
+                        <div class="md:w-1/4 mb-4 md:mb-0">
+                            <div class="bg-gray-100 rounded-lg p-3 text-center">
+                                <p class="text-gray-500 text-sm">上午</p>
+                                <p class="text-xl font-bold text-gray-800">11:00-13:30</p>
+                            </div>
+                        </div>
+                        <div class="md:w-3/4 md:pl-6">
+                            <h4 class="text-lg font-bold text-gray-800 mb-2">般若禅寺</h4>
+                            
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                                <div class="bg-gray-50 rounded-lg p-3">
+                                    <h5 class="font-bold text-gray-700 mb-1 flex items-center">
+                                        <i class="fa fa-map-marker text-primary mr-2"></i> 地址
+                                    </h5>
+                                    <p class="text-gray-600">深圳市龙岗区坂田街道雅南路12号</p>
+                                </div>
+                                <div class="bg-gray-50 rounded-lg p-3">
+                                    <h5 class="font-bold text-gray-700 mb-1 flex items-center">
+                                        <i class="fa fa-ticket text-primary mr-2"></i> 门票
+                                    </h5>
+                                    <p class="text-gray-600">免费，无需预约</p>
+                                </div>
+                                <div class="bg-gray-50 rounded-lg p-3">
+                                    <h5 class="font-bold text-gray-700 mb-1 flex items-center">
+                                        <i class="fa fa-clock-o text-primary mr-2"></i> 开放时间
+                                    </h5>
+                                    <p class="text-gray-600">6:00-19:30（建议早到）</p>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <h5 class="font-bold text-gray-700 mb-1 flex items-center">
+                                    <i class="fa fa-info-circle text-primary mr-2"></i> 参观注意事项
+                                </h5>
+                                <ul class="list-disc list-inside text-gray-600 text-sm space-y-1">
+                                    <li>穿着庄重素雅，避免过于暴露的服装</li>
+                                    <li>禁止大声喧哗，禁止拍摄佛像</li>
+                                    <li>中午11:15-12:00可品尝免费素斋</li>
+                                    <li>正门外可免费领取三炷香</li>
+                                </ul>
+                            </div>
+                            
+                            <div>
+                                <h5 class="font-bold text-gray-700 mb-1 flex items-center">
+                                    <i class="fa fa-cutlery text-primary mr-2"></i> 餐饮推荐
+                                </h5>
+                                <p class="text-gray-600">般若禅寺内素食餐厅（11:00开始供应素斋）</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 人工智能6S店 -->
+                <div class="mb-6 pb-6 border-b border-gray-200">
+                    <div class="flex flex-col md:flex-row">
+                        <div class="md:w-1/4 mb-4 md:mb-0">
+                            <div class="bg-gray-100 rounded-lg p-3 text-center">
+                                <p class="text-gray-500 text-sm">下午</p>
+                                <p class="text-xl font-bold text-gray-800">14:00-16:00</p>
+                            </div>
+                        </div>
+                        <div class="md:w-3/4 md:pl-6">
+                            <h4 class="text-lg font-bold text-gray-800 mb-2">全球首家人工智能6S店</h4>
+                            
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                                <div class="bg-gray-50 rounded-lg p-3">
+                                    <h5 class="font-bold text-gray-700 mb-1 flex items-center">
+                                        <i class="fa fa-map-marker text-primary mr-2"></i> 地址
+                                    </h5>
+                                    <p class="text-gray-600">深圳市龙岗区坂田街道星河WORLD园区</p>
+                                </div>
+                                <div class="bg-gray-50 rounded-lg p-3">
+                                    <h5 class="font-bold text-gray-700 mb-1 flex items-center">
+                                        <i class="fa fa-ticket text-primary mr-2"></i> 门票
+                                    </h5>
+                                    <p class="text-gray-600">免费，无需预约</p>
+                                </div>
+                                <div class="bg-gray-50 rounded-lg p-3">
+                                    <h5 class="font-bold text-gray-700 mb-1 flex items-center">
+                                        <i class="fa fa-clock-o text-primary mr-2"></i> 开放时间
+                                    </h5>
+                                    <p class="text-gray-600">10:00-19:00</p>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <h5 class="font-bold text-gray-700 mb-1 flex items-center">
+                                    <i class="fa fa-info-circle text-primary mr-2"></i> 参观亮点
+                                </h5>
+                                <ul class="list-disc list-inside text-gray-600 text-sm space-y-1">
+                                    <li>展示(Show)：最新AI技术与产品展示</li>
+                                    <li>销售(Sale)：AI硬件产品购买</li>
+                                    <li>培训(School)：AI技术培训课程</li>
+                                    <li>社群(Social)：AI爱好者交流平台</li>
+                                    <li>解决方案(Solution)：企业AI解决方案</li>
+                                    <li>孵化(Startup)：AI创业项目孵化</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 世界之窗 -->
+                <div>
+                    <div class="flex flex-col md:flex-row">
+                        <div class="md:w-1/4 mb-4 md:mb-0">
+                            <div class="bg-gray-100 rounded-lg p-3 text-center">
+                                <p class="text-gray-500 text-sm">晚上</p>
+                                <p class="text-xl font-bold text-gray-800">18:00-21:00</p>
+                            </div>
+                        </div>
+                        <div class="md:w-3/4 md:pl-6">
+                            <h4 class="text-lg font-bold text-gray-800 mb-2">世界之窗</h4>
+                            
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                                <div class="bg-gray-50 rounded-lg p-3">
+                                    <h5 class="font-bold text-gray-700 mb-1 flex items-center">
+                                        <i class="fa fa-map-marker text-primary mr-2"></i> 地址
+                                    </h5>
+                                    <p class="text-gray-600">深圳市南山区深南大道9037号</p>
+                                </div>
+                                <div class="bg-gray-50 rounded-lg p-3">
+                                    <h5 class="font-bold text-gray-700 mb-1 flex items-center">
+                                        <i class="fa fa-ticket text-primary mr-2"></i> 门票
+                                    </h5>
+                                    <p class="text-gray-600">夜场票（18:00后）：120元</p>
+                                </div>
+                                <div class="bg-gray-50 rounded-lg p-3">
+                                    <h5 class="font-bold text-gray-700 mb-1 flex items-center">
+                                        <i class="fa fa-clock-o text-primary mr-2"></i> 开放时间
+                                    </h5>
+                                    <p class="text-gray-600">夜场18:00-22:30</p>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <h5 class="font-bold text-gray-700 mb-1 flex items-center">
+                                    <i class="fa fa-star text-primary mr-2"></i> 夜游推荐
+                                </h5>
+                                <ul class="list-disc list-inside text-gray-600 text-sm space-y-1">
+                                    <li>埃菲尔铁塔灯光秀：19:15/20:55双时段</li>
+                                    <li>无人机星空秀：每日21:00（周末加场）</li>
+                                    <li>《LOVE·SHOW全景秀》：360°旋转舞台+全息投影</li>
+                                </ul>
+                            </div>
+                            
+                            <div>
+                                <h5 class="font-bold text-gray-700 mb-1 flex items-center">
+                                    <i class="fa fa-cutlery text-primary mr-2"></i> 餐饮推荐
+                                </h5>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                                    <div class="bg-gray-50 rounded p-2">
+                                        <p class="font-semibold text-gray-800">香蜜轩(世界之窗店)</p>
+                                        <p class="text-gray-600 text-sm">粤菜，人均约104元，距离世界之窗步行5分钟</p>
+                                    </div>
+                                    <div class="bg-gray-50 rounded p-2">
+                                        <p class="font-semibold text-gray-800">四海一家自助餐(益田假日广场店)</p>
+                                        <p class="text-gray-600 text-sm">自助餐，人均约185元，世界之窗对面</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 第二天详细行程 -->
+            <div class="bg-white rounded-xl shadow-card p-6">
+                <h3 class="text-xl font-bold text-primary mb-4">第二天 (11月23日)</h3>
+                
+                <!-- 深圳大学 -->
+                <div class="mb-6 pb-6 border-b border-gray-200">
+                    <div class="flex flex-col md:flex-row">
+                        <div class="md:w-1/4 mb-4 md:mb-0">
+                            <div class="bg-gray-100 rounded-lg p-3 text-center">
+                                <p class="text-gray-500 text-sm">上午</p>
+                                <p class="text-xl font-bold text-gray-800">9:00-12:00</p>
+                            </div>
+                        </div>
+                        <div class="md:w-3/4 md:pl-6">
+                            <h4 class="text-lg font-bold text-gray-800 mb-2">深圳大学</h4>
+                            
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                                <div class="bg-gray-50 rounded-lg p-3">
+                                    <h5 class="font-bold text-gray-700 mb-1 flex items-center">
+                                        <i class="fa fa-map-marker text-primary mr-2"></i> 地址
+                                    </h5>
+                                    <p class="text-gray-600">深圳市南山区南海大道3688号</p>
+                                </div>
+                                <div class="bg-gray-50 rounded-lg p-3">
+                                    <h5 class="font-bold text-gray-700 mb-1 flex items-center">
+                                        <i class="fa fa-ticket text-primary mr-2"></i> 门票
+                                    </h5>
+                                    <p class="text-gray-600">免费，需提前预约</p>
+                                </div>
+                                <div class="bg-gray-50 rounded-lg p-3">
+                                    <h5 class="font-bold text-gray-700 mb-1 flex items-center">
+                                        <i class="fa fa-clock-o text-primary mr-2"></i> 参观时间
+                                    </h5>
+                                    <p class="text-gray-600">8:30-17:30</p>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <h5 class="font-bold text-gray-700 mb-1 flex items-center">
+                                    <i class="fa fa-info-circle text-primary mr-2"></i> 参观政策
+                                </h5>
+                                <ul class="list-disc list-inside text-gray-600 text-sm space-y-1">
+                                    <li>需在"深圳大学校园参观预约"微信小程序预约</li>
+                                    <li>每天17:30开放第三天的预约名额</li>
+                                    <li>每个账号最多添加5位随行人员</li>
+                                    <li>需携带有效身份证件</li>
+                                    <li>校内停车位有限，建议绿色出行</li>
+                                </ul>
+                            </div>
+                            
+                            <div>
+                                <h5 class="font-bold text-gray-700 mb-1 flex items-center">
+                                    <i class="fa fa-cutlery text-primary mr-2"></i> 餐饮推荐
+                                </h5>
+                                <p class="text-gray-600">校内食堂（微信扫码支付，加收30%搭伙费）</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 返程 -->
+                <div>
+                    <div class="flex flex-col md:flex-row">
+                        <div class="md:w-1/4 mb-4 md:mb-0">
+                            <div class="bg-gray-100 rounded-lg p-3 text-center">
+                                <p class="text-gray-500 text-sm">下午</p>
+                                <p class="text-xl font-bold text-gray-800">13:00</p>
+                            </div>
+                        </div>
+                        <div class="md:w-3/4 md:pl-6">
+                            <h4 class="text-lg font-bold text-gray-800 mb-2">返程东莞</h4>
+                            
+                            <div class="mb-4">
+                                <h5 class="font-bold text-gray-700 mb-1 flex items-center">
+                                    <i class="fa fa-info-circle text-primary mr-2"></i> 返程建议
+                                </h5>
+                                <ul class="list-disc list-inside text-gray-600 text-sm space-y-1">
+                                    <li>建议12:30前出发，避开午间交通高峰</li>
+                                    <li>使用导航软件实时查看路况</li>
+                                    <li>周末返程易拥堵，提前做好准备</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 实用贴士 -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                <i class="fa fa-lightbulb-o text-primary mr-2"></i> 实用贴士
+            </h2>
+            
+            <div class="bg-white rounded-xl shadow-card p-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- 出行准备 -->
+                    <div>
+                        <h3 class="text-lg font-bold text-gray-800 mb-3 flex items-center">
+                            <i class="fa fa-suitcase text-primary mr-2"></i> 出行准备
+                        </h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-primary mt-1 mr-2"></i>
+                                <span class="text-gray-600">证件：身份证、学生证（如有）</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-primary mt-1 mr-2"></i>
+                                <span class="text-gray-600">衣物：轻便舒适的衣物，薄外套（早晚温差大）</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-primary mt-1 mr-2"></i>
+                                <span class="text-gray-600">防晒：防晒霜、太阳镜、帽子</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-primary mt-1 mr-2"></i>
+                                <span class="text-gray-600">其他：充电宝、相机、雨具（以防万一）</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- 注意事项 -->
+                    <div>
+                        <h3 class="text-lg font-bold text-gray-800 mb-3 flex items-center">
+                            <i class="fa fa-exclamation-triangle text-primary mr-2"></i> 注意事项
+                        </h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-primary mt-1 mr-2"></i>
+                                <span class="text-gray-600">提前预约深圳大学校园参观，每天17:30开放第三天名额</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-primary mt-1 mr-2"></i>
+                                <span class="text-gray-600">般若禅寺内保持安静，穿着庄重，禁止拍摄佛像</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-primary mt-1 mr-2"></i>
+                                <span class="text-gray-600">世界之窗夜场门票18:00后入场，建议提前购买</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-primary mt-1 mr-2"></i>
+                                <span class="text-gray-600">周末交通拥堵，建议提前出发，使用导航软件实时查看路况</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- 紧急联系方式 -->
+                <div class="mt-6 pt-6 border-t border-gray-200">
+                    <h3 class="text-lg font-bold text-gray-800 mb-3 flex items-center">
+                        <i class="fa fa-phone text-primary mr-2"></i> 紧急联系方式
+                    </h3>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        <div class="bg-gray-50 rounded-lg p-3 text-center">
+                            <p class="text-gray-500 text-sm">报警电话</p>
+                            <p class="text-xl font-bold text-gray-800">110</p>
+                        </div>
+                        <div class="bg-gray-50 rounded-lg p-3 text-center">
+                            <p class="text-gray-500 text-sm">急救电话</p>
+                            <p class="text-xl font-bold text-gray-800">120</p>
+                        </div>
+                        <div class="bg-gray-50 rounded-lg p-3 text-center">
+                            <p class="text-gray-500 text-sm">消防电话</p>
+                            <p class="text-xl font-bold text-gray-800">119</p>
+                        </div>
+                        <div class="bg-gray-50 rounded-lg p-3 text-center">
+                            <p class="text-gray-500 text-sm">旅游投诉</p>
+                            <p class="text-xl font-bold text-gray-800">12301</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 底部 -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h2 class="text-xl font-bold mb-2">东莞出发深圳周末两日游</h2>
+                    <p class="text-gray-400">2025年11月22-23日</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-white transition-all-300">
+                        <i class="fa fa-weixin text-2xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-all-300">
+                        <i class="fa fa-weibo text-2xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-all-300">
+                        <i class="fa fa-envelope text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="mt-6 pt-6 border-t border-gray-700 text-center text-gray-400 text-sm">
+                <p>© 2025 旅游出行方案 | 本方案仅供参考，请以实际情况为准</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // 打印功能
+        document.getElementById('btn-print').addEventListener('click', function() {
+            window.print();
+        });
+        
+        // 分享功能
+        document.getElementById('btn-share').addEventListener('click', function() {
+            alert('分享功能已触发，实际应用中可调用分享API');
+        });
+        
+        // 页面加载完成后执行
+        document.addEventListener('DOMContentLoaded', function() {
+            // 添加卡片悬停效果
+            const cards = document.querySelectorAll('.shadow-card');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.classList.add('shadow-card-hover');
+                    this.style.transform = 'translateY(-5px)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.classList.remove('shadow-card-hover');
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+            
+            // 添加按钮点击效果
+            const buttons = document.querySelectorAll('button');
+            buttons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    // 如果不是打印或分享按钮，则显示提示
+                    if (!this.id || !['btn-print', 'btn-share'].includes(this.id)) {
+                        e.preventDefault();
+                        alert('功能演示：点击了"' + this.textContent.trim() + '"按钮');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
